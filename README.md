@@ -1,16 +1,24 @@
-# ZER0BOT V1.1 🐐
+# ZER0BOT V2 🐐
 > ZER0 BOT The discord API turns your discord chat channel into a C&C server!
 > You can add or remove methods, tools,...
 
 # Installation:
 ```sh
-1. Install NodeJS 12.x.x
-2. Use your bot token generated at Discord Devoloper website
-3. Paste the bot token into the bot.js file
-4. Copy the Room ID to type attack commands into admin.json, premium.json, ayarlar.json
-5. Change the attack commands in the files in the directory admin, premiums, attacks
-6. Type the command to start the bot with the command node bot.js
-7. Let's have fun
+1. Install NodeJS 12.x
+2. Install Screen: apt-get install screen -y
+3. Use your bot token generated at Discord Devoloper website
+4. Paste the bot token on line 217 in the bot.js file
+5. Copy the ROOM ID where the attack command is written and change the ROOM ID at line 3 of the file ayarlar.json
+6. Customize attack commands in 2 folders attack_layer7 and attack_layer4
+7. Run the command to start the bot by typing node bot.js
+8. Let's have fun
+```
+
+# Log
+```sh
+- UPDATE VERIFY
+2. UPDATE NEW THEME
+3. OPTIMIZE SOURCE
 ```
 
 # Credits
