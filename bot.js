@@ -194,7 +194,7 @@ client.once('ready', () => {
     client.user.setPresence({
         status: 'available',
         activity: {
-            name: 'credit: zxcr9999',
+            name: 'HENTAI',
             type: 'WATCHING',
             url: 'https://discord.com/'
         }
