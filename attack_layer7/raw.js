@@ -44,7 +44,7 @@ const embed = new Discord.MessageEmbed()
  }, 5000); //time in milliseconds 1000 milliseconds = 1 seconds
 
 // Attack Gif
-var gifler = ["https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif"];
+var gifler = ["https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif", "https://media.giphy.com/media/jzHFPlw89eTqU/giphy.gif"];
     var attackgif = gifler[Math.floor((Math.random() * gifler.length))];
 
 // Verify Gif
