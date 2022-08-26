@@ -25,6 +25,75 @@ client.aliases = new Discord.Collection();
   });
 });*/
 
+// General command
+fs.readdir("./general/", (err, files) => {
+
+  if(err) console.log(err);
+  let jsfile = files.filter(f => f.split(".").pop() === "js");
+  if(jsfile.length <= 0) {
+    console.log(new Error("An error occu.red!"));
+    process.exit(1);
+    return;
+  }
+
+  jsfile.forEach((f) =>{
+    let props = require(`./general/${f}`);
+    console.log(`Loaded ${f}.`);
+    client.commands.set(props.help.name, props);
+  });
+})
+
+client.reload = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      delete require.cache[require.resolve(`./general/${command}`)];
+      let cmd = require(`./general/${command}`);
+      client.commands.delete(command);
+      client.aliases.forEach((cmd, alias) => {
+        if (cmd === command) client.aliases.delete(alias);
+      });
+      client.commands.set(command, cmd);
+      cmd.conf.aliases.forEach(alias => {
+        client.aliases.set(alias, cmd.help.name);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
+    }
+  });
+};
+
+client.load = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      let cmd = require(`./general/${command}`);
+      client.commands.set(command, cmd);
+      cmd.conf.aliases.forEach(alias => {
+        client.aliases.set(alias, cmd.help.name);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
+    }
+  });
+};
+
+client.unload = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      delete require.cache[require.resolve(`./general/${command}`)];
+      let cmd = require(`./general/${command}`);
+      client.commands.delete(command);
+      client.aliases.forEach((cmd, alias) => {
+        if (cmd === command) client.aliases.delete(alias);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
+    }
+  });
+};
+
 // Layer 4
 fs.readdir("./attack_layer4/", (err, files) => {
 
