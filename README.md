@@ -12,17 +12,21 @@
 6. Customize attack commands in 2 folders attack_layer7 and attack_layer4
 7. Run the command to start the bot by typing node bot.js
 8. Let's have fun
+
+NOTE: pls type command npm i axios and start bot
 ```
 
 # Log
 ```sh
 - SMALL UPDATE ANTI SKID
 - UPDATE METHODS COMMAND
+- NEW GEOIP FUNCTION
 ```
 
 # Credits
 ```sh
 zxcr9999
+rcong
 (Thank for using <3)
 ```
 
