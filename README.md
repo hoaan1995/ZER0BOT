@@ -1,4 +1,4 @@
-# ZER0BOT V2 🐐
+# ZER0BOT V2.1 🐐
 > ZER0 BOT The discord API turns your discord chat channel into a C&C server!
 > You can add or remove methods, tools,...
 
@@ -16,9 +16,8 @@
 
 # Log
 ```sh
-- UPDATE VERIFY
-- UPDATE NEW THEME
-- OPTIMIZE SOURCE
+- SMALL UPDATE ANTI SKID
+- UPDATE METHODS COMMAND
 ```
 
 # Credits
