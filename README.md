@@ -13,7 +13,7 @@
 7. Run the command to start the bot by typing node bot.js
 8. Let's have fun
 
-NOTE: pls type command npm i axios and start bot
+NOTE: easy install pls dont say me how to install
 ```
 
 # Log
