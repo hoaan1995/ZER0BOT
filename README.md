@@ -7,7 +7,7 @@
 1. Install NodeJS 12.x
 2. Install Screen: apt-get install screen -y
 3. Use your bot token generated at Discord Devoloper website
-4. Paste the bot token on line 217 in the bot.js file
+4. Paste the bot token on line 286 in the bot.js file
 5. Copy the ROOM ID where the attack command is written and change the ROOM ID at line 3 of the file ayarlar.json
 6. Customize attack commands in 2 folders attack_layer7 and attack_layer4
 7. Run the command to start the bot by typing node bot.js
