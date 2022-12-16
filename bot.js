@@ -8,7 +8,7 @@ const moment = require('moment')
 require('./util/eventLoader')(client);
 
 var colors = require('colors');
-var prefix = ayarlar.prefix;
+var prefix = !;
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
@@ -283,4 +283,4 @@ client.on('error', e => {
   console.log(chalk.b.red(e.replace(regToken, 'that was.redacted')));
 });
 
-client.login("PASTE YOUR BOT TOKEN");
+client.login("MTA1MzIwNzg0NTQ2MzY3NDkzMQ.Go2ovN.RizMC0jQr-rVlQYzcrQxtMxfxDfpL4_5pz7GUo");
