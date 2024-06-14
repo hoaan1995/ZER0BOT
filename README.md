@@ -2,6 +2,8 @@
 > ZER0 BOT The discord API turns your discord chat channel into a C&C server!
 > You can add or remove methods, tools,...
 
+# Store: https://condi.billgang.store/
+
 # Installation:
 ```sh
 1. Install NodeJS 12.x
